@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Squares and Cubes Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src = "script.js"></script>
+</head>
+<body>
+    <h1>Squares and Cubes Calculator</h1>
+
+    <div id="calculator">
+        <label for="start">Start</label>
+        <br>
+        <input type="number" id="start" min="0" max="100">
+        <br>
+        <br>
+        <label for="end">End</label>
+        <br>
+        <input type="number" id="end" min="0" max="100">
+        <br>
+        <br>    
+        <button onclick="calculate()">Calculate</button>
+    </div>
+
+    <div id="results">
+        <h2>Results</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Number</th>
+                    <th>Square</th>
+                    <th>Cube</th>
+                </tr>
+            </thead>
+            <tbody id="resultTable">
+                
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
